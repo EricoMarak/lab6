@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Question Paper</title>
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      padding: 20px;
+    }
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      max-width: 800px;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 32px;
+    }
+    h2 {
+      color: #16a085;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .question {
+      font-size: 20px;
+      margin: 15px 0;
+      font-weight: bold;
+    }
+    .marks {
+      color: #e74c3c;
+      float: right;
+    }
+    .options {
+      margin: 10px 0;
+    }
+    .options input {
+      margin-right: 10px;
+    }
+    .feedback {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 style="text-decoration: underline;">Mid-Term Examination</h1>
+    <h2>Subject: Web Development</h2>
+    <p>Date: <span style="font-weight: bold;">15th September 2024</span></p>
+    <div class="question">
+      1. What is HTML? Explain the structure of an HTML document. <span class="marks">[10 Marks]</span>
+    </div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="wrong">Hyper Text Markup Link</label><br>
+      <label><input type="radio" name="q1" value="right">Hyper Text Markup Language</label><br>
+      <label><input type="radio" name="q1" value="wrong">Home Tool Markup Language</label><br>
+      <label><input type="radio" name="q1" value="wrong">Hypertext Modeling Language</label><br>
+    </div>
+    <button onclick="checkAnswer('q1', 'feedback1')">Submit</button>
+    <div id="feedback1" class="feedback"></div>
+    <div class="question">
+      2. Define CSS. How does CSS help in designing webpages? <span class="marks">[10 Marks]</span>
+    </div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="wrong">Cascading Simple Sheets</label><br>
+      <label><input type="radio" name="q2" value="right">Cascading Style Sheets</label><br>
+      <label><input type="radio" name="q2" value="wrong">Content Style Sheets</label><br>
+      <label><input type="radio" name="q2" value="wrong">Common Style Syntax</label><br>
+    </div>
+    <button onclick="checkAnswer('q2', 'feedback2')">Submit</button>
+    <div id="feedback2" class="feedback"></div>
+    <div class="question">
+      3. Explain the difference between inline, internal, and external CSS with examples. <span class="marks">[10 Marks]</span>
+    </div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="wrong">All CSS must be inline</label><br>
+      <label><input type="radio" name="q3" value="wrong">CSS cannot be used externally</label><br>
+      <label><input type="radio" name="q3" value="right">CSS can be inline, internal, or external</label><br>
+      <label><input type="radio" name="q3" value="wrong">CSS is only for internal styling</label><br>
+    </div>
+    <button onclick="checkAnswer('q3', 'feedback3')">Submit</button>
+    <div id="feedback3" class="feedback"></div>
+    <div class="question">
+      4. What are selectors in CSS? Discuss the types of selectors with examples. <span class="marks">[10 Marks]</span>
+    </div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="wrong">Selectors only work with classes</label><br>
+      <label><input type="radio" name="q4" value="wrong">Selectors are for HTML elements only</label><br>
+      <label><input type="radio" name="q4" value="right">Selectors can target classes, IDs, and elements</label><br>
+      <label><input type="radio" name="q4" value="wrong">Selectors do not exist in CSS</label><br>
+    </div>
+    <button onclick="checkAnswer('q4', 'feedback4')">Submit</button>
+    <div id="feedback4" class="feedback"></div>
+    <div class="question">
+      5. How do you apply colors in CSS? Explain the different methods to define colors. <span class="marks">[10 Marks]</span>
+    </div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="right">Using color names, RGB, HEX, HSL</label><br>
+      <label><input type="radio" name="q5" value="wrong">Only by using color names</label><br>
+      <label><input type="radio" name="q5" value="wrong">Only RGB and HEX</label><br>
+      <label><input type="radio" name="q5" value="wrong">Only HEX</label><br>
+    </div>
+    <button onclick="checkAnswer('q5', 'feedback5')">Submit</button>
+    <div id="feedback5" class="feedback"></div>
+    <div class="question">
+      6. What is the box model in CSS? Describe its components with a diagram. <span class="marks">[10 Marks]</span>
+    </div>
+    <div class="options">
+      <label><input type="radio" name="q6" value="wrong">Box model has no components</label><br>
+      <label><input type="radio" name="q6" value="right">Box model consists of margin, border, padding, and content</label><br>
+      <label><input type="radio" name="q6" value="wrong">Only border and padding are part of the box model</label><br>
+      <label><input type="radio" name="q6" value="wrong">Box model includes only content and margin</label><br>
+    </div>
+    <button onclick="checkAnswer('q6', 'feedback6')">Submit</button>
+    <div id="feedback6" class="feedback"></div>
+    <div class="question">
+      7. Explain the difference between class and ID selectors in CSS. <span class="marks">[10 Marks]</span>
+    </div>
+    <div class="options">
+      <label><input type="radio" name="q7" value="right">Class can be used multiple times, ID is unique</label><br>
+      <label><input type="radio" name="q7" value="wrong">ID can be used multiple times, Class is unique</label><br>
+      <label><input type="radio" name="q7" value="wrong">Both Class and ID are unique</label><br>
+      <label><input type="radio" name="q7" value="wrong">There is no difference between Class and ID</label><br>
+    </div>
+    <button onclick="checkAnswer('q7', 'feedback7')">Submit</button>
+    <div id="feedback7" class="feedback"></div>
+    <div class="question">
+      8. How can you align elements horizontally and vertically using CSS? <span class="marks">[10 Marks]</span>
+    </div>
+    <div class="options">
+      <label><input type="radio" name="q8" value="right">Using flexbox and CSS properties like justify-content and align-items</label><br>
+      <label><input type="radio" name="q8" value="wrong">Only using position: absolute</label><br>
+      <label><input type="radio" name="q8" value="wrong">Using only margins</label><br>
+      <label><input type="radio" name="q8" value="wrong">CSS cannot align elements</label><br>
+    </div>
+    <button onclick="checkAnswer('q8', 'feedback8')">Submit</button>
+    <div id="feedback8" class="feedback"></div>
+    <div class="question">
+      9. What is Flexbox in CSS? Explain its importance in responsive design. <span class="marks">[10 Marks]</span>
+    </div>
+    <div class="options">
+      <label><input type="radio" name="q9" value="right">Flexbox is a layout module that helps in aligning and distributing items in a container</label><br>
+      <label><input type="radio" name="q9" value="wrong">Flexbox is used only for grids</label><br>
+      <label><input type="radio" name="q9" value="wrong">Flexbox does not help with responsiveness</label><br>
+      <label><input type="radio" name="q9" value="wrong">Flexbox is outdated</label><br>
+    </div>
+    <button onclick="checkAnswer('q9', 'feedback9')">Submit</button>
+    <div id="feedback9" class="feedback"></div>
+    <div class="question">
+      10. Write a CSS code to create a responsive navigation bar. <span class="marks">[10 Marks]</span>
+    </div>
+    <div class="options">
+      <label><input type="radio" name="q10" value="right">Using flexbox and media queries</label><br>
+      <label><input type="radio" name="q10" value="wrong">Using only tables</label><br>
+      <label><input type="radio" name="q10" value="wrong">Using only position: fixed</label><br>
+      <label><input type="radio" name="q10" value="wrong">CSS cannot create a navigation bar</label><br>
+    </div>
+    <button onclick="checkAnswer('q10', 'feedback10')">Submit</button>
+    <div id="feedback10" class="feedback"></div>
+
+  </div>
+
+  <script>
+    function checkAnswer(questionName, feedbackId) {
+      const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+      const feedbackElement = document.getElementById(feedbackId);
+
+      if (!selectedOption) {
+        feedbackElement.innerHTML = "Please select an option.";
+        feedbackElement.style.color = "orange";
+        return;
+      }
+
+      if (selectedOption.value === "right") {
+        feedbackElement.innerHTML = "Correct!";
+        feedbackElement.style.color = "green";
+      } else {
+        feedbackElement.innerHTML = "Wrong! Try again.";
+        feedbackElement.style.color = "red";
+      }
+    }
+  </script>
+
+</body>
+</html>
